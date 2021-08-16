@@ -1,7 +1,7 @@
 // Script //
 node {
   stage('Build') {
-    sh 'make'
+    sh 'mkdir /home/sunday'
       }
         stage('Test') {
 	  sh 'make check'
