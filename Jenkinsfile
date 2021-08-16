@@ -1,13 +1,3 @@
-// Script //
-node {
-  stage('Build') {
-    sh 'mkdir /home/sunday'
-      }
-        stage('Test') {
-	  sh 'make check'
-	    junit 'reports/**/*.xml'
-	      }
-	        stage('Deploy') {
-		  sh 'make publish'
-		    }
-		    }
+sh '''mkdir /home/sunday
+touch /home/sunday/test.html
+echo testing >> /home/sunday/test.html'''
